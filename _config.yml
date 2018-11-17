@@ -1,10 +1,11 @@
 title: twOday
 description: Hacker is the new sexy
-show_downloads: true
+show_downloads: false
 google_analytics:
 theme: jekyll-theme-hacker
 
-
+#markdown
+markdown: kramdown
 
 ## twOday
 author: twOday

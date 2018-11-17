@@ -1,5 +1,5 @@
 ---
-layout: layout: default
+layout: default
 category: Windows
 tags: [Windows]
 ---

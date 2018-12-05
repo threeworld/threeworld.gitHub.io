@@ -99,7 +99,8 @@ sequence
 
 1. 首先确认服务器有phpinfo()和存在文件包含:
 
-   ![1543937153772]({{site.url}}/images/1543937129(1).jpg)
+   ![1543937153772](https://github.com/threeworld/threeworld.github.io/blob/master/images/1543937129(1).jpg?raw=true)
+
 
 
 ![1543937043(1)]({{site.url}}/images/1543937043(1).jpg)

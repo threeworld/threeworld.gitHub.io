@@ -28,14 +28,14 @@ social:
       link: "https://github.com/threeworld"
 
 share:
-  twitter_username: agusmakmun6
+  twitter_username: threeworld
   fb_appid: 1749788565247320
 
 urls:
     - text: About Me
       url: /about/
-    #- text: My Projects
-    #  url: /projects/
+    - text: My Projects
+      url: /projects/
     - text: XML Feed
      url: /feed.xml
 

@@ -35,7 +35,7 @@ urls:
     - text: About Me
       url: /about/
     - text: My category
-      url: /category/
+      url: /categories/
     - text: XML Feed
       url: /feed.xml
 

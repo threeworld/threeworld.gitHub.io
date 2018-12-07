@@ -34,10 +34,10 @@ share:
 urls:
     - text: About Me
       url: /about/
-    - text: My Projects
-      url: /projects/
+    #- text: My Projects
+    #  url: /projects/
     - text: XML Feed
-      url: /feed.xml
+     url: /feed.xml
 
 url: "https://threeworld.github.io"
 baseurl: ""

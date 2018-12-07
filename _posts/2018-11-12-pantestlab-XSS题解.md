@@ -1,7 +1,8 @@
 ---
-layout: default
-category: Web安全
-tags: [xss, Web安全]
+layout: post
+title:  "pantestlab-XSS题解"
+date:   2018-11-12 02:28:15 +0700
+categories: [XSS,Web安全]
 ---
 
 ### 知识储备

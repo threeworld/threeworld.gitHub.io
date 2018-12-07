@@ -1,7 +1,8 @@
 ---
-layout: default
-category: Web安全
-tags: [条件竞争,文件包含]
+layout: post
+title:  "lfi_with_phpinfo"
+date:   2018-12-04 20:15:33 +0700
+categories: [Web安全, 文件包含]
 ---
 > IFI（local file include）本地文件包含。由于包含的文件参数用户是可控的，黑客通过包含非PHP执行文件，如构造包含PHP代码的图片木马、临时文件、session文件、日志等来达到执行PHP代码的目的。根据服务器的配置可以查看其他文件
 

@@ -1,7 +1,8 @@
 ---
-layout: default
-category: Web安全
-tags: [SQL注入]
+layout: post
+title:  "SQLserver注入总结"
+date:   2018-11-22 20:15:33 +0700
+categories: [Web安全, SQL注入]
 ---
 
 ## 1、信息收集

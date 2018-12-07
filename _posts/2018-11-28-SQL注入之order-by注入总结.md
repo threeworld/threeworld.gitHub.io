@@ -1,7 +1,8 @@
 ---
-layout: default
-category: Web安全
-tags: [SQL注入]
+layout: post
+title:  "SQL注入之order by注入总结"
+date:   2018-11-28 20:15:33 +0700
+categories: [Web安全, SQL注入]
 ---
 
 ## 0x00 order by 注入是什么

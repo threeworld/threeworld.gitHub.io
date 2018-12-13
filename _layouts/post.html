@@ -54,6 +54,10 @@ layout: default
   {% endif %}
 </div>
 
+{% if site.intensedebate_comments %}
+      {% include intensedebate-comments.html %}
+{% endif %}
+
 <div class="disqus-comments">
   <div id="disqus_thread"></div>
   <script type="text/javascript">

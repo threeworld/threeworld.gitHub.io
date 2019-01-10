@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  “The Java serialization algorithm revealed"
+title:  "The Java serialization algorithm revealed"
 date:   2019-01-06 20:15:33 +0700
 categories: [Web安全]
 ---

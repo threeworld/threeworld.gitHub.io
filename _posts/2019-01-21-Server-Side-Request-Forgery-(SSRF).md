@@ -13,13 +13,13 @@ SSRF 的形成原理大多是由于服务端提供了从其他服务器应用获
 
 攻击图示
 
-![SSRF]({{}site.url}/images/SSRF.png)
+![SSRF]({{site.url}}/images/SSRF.png)
 
 ## 0x01 SSRF能干些什么？
 
 可以越过防火墙进行攻击，直接有服务器发起攻击，平常服务器所处的内网我们是访问不了的。
 
-![Snipaste_2019-01-17_16-28-37]({{}site.url}/images/Snipaste_2019-01-17_16-28-37.png)
+![Snipaste_2019-01-17_16-28-37]({{site.url}}/images/Snipaste_2019-01-17_16-28-37.png)
 
 主要的攻击方式：
 
@@ -29,7 +29,7 @@ SSRF 的形成原理大多是由于服务端提供了从其他服务器应用获
 * 攻击内外网的web应用，主要使用HTTP、GET请求就可以实现的攻击（比如Struts2、SQLi）
 * 利用file协议读取本地文件等。
 
-![Snipaste_2019-01-17_19-18-05]({{}site.url}/images/Snipaste_2019-01-17_19-18-05.png)
+![Snipaste_2019-01-17_19-18-05]({{site.url}}/images/Snipaste_2019-01-17_19-18-05.png)
 
 ## 0x03 漏洞利用
 
@@ -54,15 +54,15 @@ curl($url);
 
 该代码实现的功能是获取GET参数URL，然后将URL的内容返回到网页上。我们将请求参数`url`改为`http://www.baidu.com`，执行后可以看到以下页面
 
-![Snipaste_2019-01-17_21-12-36]({{}site.url}/images/Snipaste_2019-01-17_21-12-36.png)
+![Snipaste_2019-01-17_21-12-36]({{site.url}}/images/Snipaste_2019-01-17_21-12-36.png)
 
 如果将参数`url`为内网地址，则会泄露内网信息，将`url`改为`192.168.0.103:3306`（服务器的地址）页面返回
 
-![Snipaste_2019-01-17_21-14-53]({{}site.url}/images/Snipaste_2019-01-17_21-14-53.png)
+![Snipaste_2019-01-17_21-14-53]({{site.url}}/images/Snipaste_2019-01-17_21-14-53.png)
 
 读取本地文件
 
-![Snipaste_2019-01-17_21-15-46]({{}site.url}/images/Snipaste_2019-01-17_21-15-46.png)
+![Snipaste_2019-01-17_21-15-46]({{site.url}}/images/Snipaste_2019-01-17_21-15-46.png)
 
 ### Weblogic SSRF漏洞
 
@@ -77,7 +77,7 @@ docker-compose build
 docker-compose up -d
 ```
 
-运行完上面两条命令后，漏洞存在于`http://your-ip:7001/uddiexplorer/SearchPublicRegistries.jsp`，访问后可以看到![Snipaste_2019-01-17_21-42-11]({{}site.url}/images/Snipaste_2019-01-17_21-42-11.png)
+运行完上面两条命令后，漏洞存在于`http://your-ip:7001/uddiexplorer/SearchPublicRegistries.jsp`，访问后可以看到![Snipaste_2019-01-17_21-42-11]({{site.url}}/images/Snipaste_2019-01-17_21-42-11.png)
 
 现在来进行内网端口扫描，使用脚本
 
@@ -121,11 +121,11 @@ if __name__ == "__main__":
 
 注意上面的`exp_url` 要修改为自己的服务器IP
 
-![Snipaste_2019-01-17_21-45-25]({{}site.url}/images/Snipaste_2019-01-17_21-45-25.png)
+![Snipaste_2019-01-17_21-45-25]({{site.url}}/images/Snipaste_2019-01-17_21-45-25.png)
 
 `172.17.0.1`  是docker里面的地址，也就是内网地址
 
-通过ssrf 探测到内网中redis服务器 ‘172.17.0.2:6379’正常访问
+通过ssrf 探测到内网中redis服务器 `172.17.0.2:6379`正常访问
 
 构造脚本写入 目录`‘/etc/crontab‘`
 
